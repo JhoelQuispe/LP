@@ -39,9 +39,6 @@ public static void main(String[] args) {
 		e.printStackTrace();
 	}
 	
-	System.out.print("\npatito" + "cometa" + "\n");
-	
-	
 }
 
 
