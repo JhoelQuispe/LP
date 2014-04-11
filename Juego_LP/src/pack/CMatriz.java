@@ -2,13 +2,6 @@ package pack;
 
 import java.util.Vector;
 
-//2,0
-//3,3
-//2,1
-//2,4
-//1,2
-//1,2
-//0,0
 public class CMatriz{
 	
 	
@@ -27,12 +20,7 @@ public class CMatriz{
 		System.out.println("=====");
 		this.Reconocer(rmat);
 		this.Solucionar();	
-//		this.Borrar(2, 0, rmat);
-//		this.Borrar(3, 3, rmat);
-//		this.Borrar(2, 1, rmat);
-//		this.Borrar(2, 4, rmat);
-//		this.Borrar(1, 2, rmat);
-//		this.Borrar(1, 2, rmat);
+
 		
 	}
 	
@@ -56,11 +44,11 @@ public class CMatriz{
 		if (canSelect(a, b, af , mat)){
 			System.out.println(af);
 			this.Borrar1(a, b, af , mat);
-			this.Show(mat);
-			System.out.println();
+			// this.Show(mat);
+			// System.out.println();
 			this.Caer(mat);
-			this.Show(mat);
-			System.out.println();
+			// this.Show(mat);
+			// System.out.println();
 			this.Recorrer(mat);
 			this.Show(mat);
 		}
@@ -254,8 +242,8 @@ public class CMatriz{
 		Show(cmat);
 		Vector<Pair> puntos = Reconocer(cmat);
 		if(tiene_elem(cmat) && puntos.size() == 0){
-			System.out.println(tiene_elem(cmat));
-			System.out.println(puntos.size());
+			// System.out.println(tiene_elem(cmat));
+			// System.out.println(puntos.size());
 			
 			System.out.println("backtrack!");
 			return -1;
